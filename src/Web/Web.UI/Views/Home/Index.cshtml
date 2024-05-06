@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <div class="row">
+        <div class="form-group col-md align-items-start flex-column">
+            <label class="control-label">Nereden</label>
+            <select class="form-control" id="departureDropdown">
+                <option value="0" disabled selected>Hava alanı seçiniz</option>
+            </select>
+        </div>
+        <div class="form-group col-md align-items-start flex-column">
+            <label class="control-label">Nereye</label>
+            <select class="form-control" id="arrivalDropdown">
+                <option value="0" disabled selected>Hava alanı seçiniz</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md align-items-start flex-column">
+            <div class="form-check form-switch">
+                <input class="form-check-input align-self-center" type="checkbox" id="searchType">
+                <label class="form-check-label d-inline-flex align-self-center" for="searchType">
+                    Tek Yön
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md align-items-start flex-column">
+            <label class="control-label">Gidiş Tarihi</label>
+            <input class="form-control" id="departureDate" type="text">
+        </div>
+        <div id="returnDateDiv" class="form-group col-md align-items-start flex-column">
+            <label class="control-label">Dönüş Tarihi</label>
+            <input class="form-control" id="returnDate" type="text">
+        </div>
+    </div>
+    <div class="row">
+        <div class="text-left col-auto">
+            <button type="button" onclick="SearchTicket()" class="btn btn-primary">Uçuş Ara</button>
+        </div>
+    </div>
+
+    <div id="seferList">
+    </div>
+</div>

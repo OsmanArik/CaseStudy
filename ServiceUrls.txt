@@ -1,0 +1,7 @@
+Services:
+
+FlightProvider : https://localhost:5001
+
+FlightService : https://localhost:6001
+
+Web.UI : https://localhost:7001

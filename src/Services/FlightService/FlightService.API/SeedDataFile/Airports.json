@@ -1,0 +1,298 @@
+﻿[
+  {
+    "Name": "Şakirpaşa Havalimanı",
+    "IATACode": "ADA",
+    "CityId": 1
+  },
+  {
+    "Name": "Ankara Esenboğa Havalimanı",
+    "IATACode": "ESB",
+    "CityId": 6
+  },
+  {
+    "Name": "Antalya Havalimanı",
+    "IATACode": "AYT",
+    "CityId": 7
+  },
+  {
+    "Name": "Gazipaşa Havalimanı",
+    "IATACode": "GZP",
+    "CityId": 7
+  },
+  {
+    "Name": "Balıkesir Koca Seyit Havalimanı",
+    "IATACode": "EDO",
+    "CityId": 10
+  },
+  {
+    "Name": "Bursa Yenişehir Havalimanı",
+    "IATACode": "YEI",
+    "CityId": 16
+  },
+  {
+    "Name": "Çanakkale Havalimanı",
+    "IATACode": "CKZ",
+    "CityId": 17
+  },
+  {
+    "Name": "Denizli Çardak Havalimanı",
+    "IATACode": "DNZ",
+    "CityId": 20
+  },
+  {
+    "Name": "Diyarbakır Havalimanı",
+    "IATACode": "DIY",
+    "CityId": 21
+  },
+  {
+    "Name": "Elazığ Havalimanı",
+    "IATACode": "EZS",
+    "CityId": 23
+  },
+  {
+    "Name": "Erzurum Havalimanı",
+    "IATACode": "ERZ",
+    "CityId": 25
+  },
+  {
+    "Name": "Hasan Polatkan Havalimanı",
+    "IATACode": "AOE",
+    "CityId": 26
+  },
+  {
+    "Name": "Gaziantep Havalimanı",
+    "IATACode": "GZT",
+    "CityId": 27
+  },
+  {
+    "Name": "Hatay Havalimanı",
+    "IATACode": "HTY",
+    "CityId": 31
+  },
+  {
+    "Name": "Isparta Süleyman Demirel Havalimanı",
+    "IATACode": "ISE",
+    "CityId": 32
+  },
+  {
+    "Name": "İstanbul Havalimanı",
+    "IATACode": "IST",
+    "CityId": 34
+  },
+  {
+    "Name": "Sabiha Gökçen Havalimanı",
+    "IATACode": "SAW",
+    "CityId": 34
+  },
+  {
+    "Name": "Adnan Menderes Havalimanı",
+    "IATACode": "ADB",
+    "CityId": 35
+  },
+  {
+    "Name": "Kars Harakani Havalimanı",
+    "IATACode": "KSY",
+    "CityId": 36
+  },
+  {
+    "Name": "Erkilet Havalimanı",
+    "IATACode": "ASR",
+    "CityId": 38
+  },
+  {
+    "Name": "Cengiz Topel Havalimanı",
+    "IATACode": "KCO",
+    "CityId": 41
+  },
+  {
+    "Name": "Konya Havalimanı",
+    "IATACode": "KYA",
+    "CityId": 42
+  },
+  {
+    "Name": "Zafer Havalimanı",
+    "IATACode": "KZR",
+    "CityId": 43
+  },
+  {
+    "Name": "Malatya Havalimanı",
+    "IATACode": "MLX",
+    "CityId": 44
+  },
+  {
+    "Name": "Dalaman Havalimanı",
+    "IATACode": "DLM",
+    "CityId": 48
+  },
+  {
+    "Name": "Milas-Bodrum Havalimanı",
+    "IATACode": "BJV",
+    "CityId": 48
+  },
+  {
+    "Name": "Nevşehir Kapadokya Havalimanı",
+    "IATACode": "NAV",
+    "CityId": 50
+  },
+  {
+    "Name": "Ordu-Giresun Havalimanı",
+    "IATACode": "OGU",
+    "CityId": 52
+  },
+  {
+    "Name": "Rize-Artvin Havalimanı",
+    "IATACode": "RZV",
+    "CityId": 53
+  },
+  {
+    "Name": "Samsun Çarşamba Havalimanı",
+    "IATACode": "SZF",
+    "CityId": 55
+  },
+  {
+    "Name": "Sinop Havalimanı",
+    "IATACode": "NOP",
+    "CityId": 57
+  },
+  {
+    "Name": "Sivas Nuri Demirağ Havalimanı",
+    "IATACode": "VAS",
+    "CityId": 58
+  },
+  {
+    "Name": "Şanlıurfa GAP Havalimanı",
+    "IATACode": "GNY",
+    "CityId": 63
+  },
+  {
+    "Name": "Tekirdağ Çorlu Havalimanı",
+    "IATACode": "TEQ",
+    "CityId": 59
+  },
+  {
+    "Name": "Trabzon Havalimanı",
+    "IATACode": "TZX",
+    "CityId": 61
+  },
+  {
+    "Name": "Uşak Havalimanı",
+    "IATACode": "USQ",
+    "CityId": 64
+  },
+  {
+    "Name": "Van Ferit Melen Havalimanı",
+    "IATACode": "VAN",
+    "CityId": 65
+  },
+  {
+    "Name": "Zonguldak Havalimanı",
+    "IATACode": "ONQ",
+    "CityId": 67
+  },
+  {
+    "Name": "Adıyaman Havalimanı",
+    "IATACode": "ADF",
+    "CityId": 2
+  },
+  {
+    "Name": "Ağrı Ahmed-i Hani Havalimanı",
+    "IATACode": "AJI",
+    "CityId": 4
+  },
+  {
+    "Name": "Amasya Merzifon Havalimanı",
+    "IATACode": "MZH",
+    "CityId": 5
+  },
+  {
+    "Name": "Aydın Çıldır Havalimanı",
+    "IATACode": "CII",
+    "CityId": 9
+  },
+  {
+    "Name": "Balıkesir Merkez Havalimanı",
+    "IATACode": "BZI",
+    "CityId": 10
+  },
+  {
+    "Name": "Batman Havalimanı",
+    "IATACode": "BAL",
+    "CityId": 72
+  },
+  {
+    "Name": "Bingöl Havalimanı",
+    "IATACode": "BGG",
+    "CityId": 12
+  },
+  {
+    "Name": "Bursa Yunuseli Havalimanı",
+    "IATACode": "BTZ",
+    "CityId": 16
+  },
+  {
+    "Name": "Gökçeada Havalimanı",
+    "IATACode": "GKD",
+    "CityId": 17
+  },
+  {
+    "Name": "Erzincan Yıldırım Akbulut Havalimanı",
+    "IATACode": "ERC",
+    "CityId": 24
+  },
+  {
+    "Name": "Hakkâri Yüksekova Selahaddin Eyyubi Havalimanı",
+    "IATACode": "YKO",
+    "CityId": 30
+  },
+  {
+    "Name": "Iğdır Şehit Bülent Aydın Havalimanı",
+    "IATACode": "IGD",
+    "CityId": 76
+  },
+  {
+    "Name": "İstanbul Hezarfen Havalimanı",
+    "IATACode": "Yok",
+    "CityId": 34
+  },
+  {
+    "Name": "Selçuk-Efes Havalimanı",
+    "IATACode": "IZM",
+    "CityId": 35
+  },
+  {
+    "Name": "Kahramanmaraş Havalimanı",
+    "IATACode": "KCM",
+    "CityId": 46
+  },
+  {
+    "Name": "Kastamonu Havalimanı",
+    "ICAOCode": "LTAL",
+    "IATACode": "KFS",
+    "CityId": 37
+  },
+  {
+    "Name": "Mardin Prof. Dr. Aziz Sancar Havalimanı",
+    "IATACode": "MQM",
+    "CityId": 47
+  },
+  {
+    "Name": "Muş Havalimanı",
+    "IATACode": "MSR",
+    "CityId": 49
+  },
+  {
+    "Name": "Siirt Havalimanı",
+    "IATACode": "SXZ",
+    "CityId": 56
+  },
+  {
+    "Name": "Şırnak Şerafettin Elçi Havalimanı",
+    "IATACode": "NKT",
+    "CityId": 73
+  },
+  {
+    "Name": "Tokat Havalimanı",
+    "IATACode": "TJK",
+    "CityId": 60
+  }
+]

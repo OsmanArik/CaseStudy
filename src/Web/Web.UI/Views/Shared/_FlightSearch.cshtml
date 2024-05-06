@@ -1,0 +1,114 @@
+﻿@using Shared.Models.WCFServiceModels;
+@model List<FlightOptionModel>
+@{
+    int oneWayIndex = -1;
+
+    int roundTripIndex = -1;
+
+    bool isRoundTrip = Model.Any(x => x.IsRoundTrip);
+}
+@if (Model is null)
+{
+    <div>Flight Not Found!</div>
+}
+else
+{
+    <div class="d-flex">
+        <div class="flight-list">
+            <div class="flight-list-header">
+                <div class="div-item flight-text">Kalkış Yeri</div>
+                <div class="div-item flight-text">Varış Yeri</div>
+                <div class="div-item flight-text">Kalkış Saat</div>
+                <div class="div-item flight-text">Varış Saat</div>
+                <div class="div-item flight-text detail">Ücret</div>
+                <div class="div-item detail flight-text"></div>
+            </div>
+            
+            @foreach (var item in Model.Where(x => !x.IsRoundTrip))
+            {
+                oneWayIndex++;
+                var id = "oneway-" + oneWayIndex;
+                <div class="flight-list-item">
+                    <div class="div-item">
+                        <div>@item.DestinationPoint</div>
+                    </div>
+                    <div class="div-item">
+                        <div>@item.OriginPoint</div>
+                    </div>
+                    <div class="div-item">
+                        <div>
+                            @item.DepartureDateTime.ToString("yyyy-MM-dd HH:mm")
+                        </div>
+                    </div>
+                    <div class="div-item">
+                        <div>@item.ArrivalDateTime.ToString("yyyy-MM-dd HH:mm")</div>
+                    </div>
+                    <div class="div-item">
+                        <div>@Math.Round(item.Price,2) ₺</div>
+                    </div>
+                    <div class="div-item detail" data-toggle="collapse" href="#@(id)" role="button" aria-expanded="false" aria-controls="@id">
+                        Detay
+                    </div>
+                </div>
+                <div class="collapse" id="@id">
+                    <div class="card">
+                        <div>Uçu Numarası: @item.FlightNumber</div>
+                        <div>Kalkış : @item.DestinationPoint</div>
+                        <div>Varış : @item.OriginPoint</div>
+                    </div>
+                </div>
+            }
+        </div>
+        @if (isRoundTrip)
+        {
+            <div class="flight-list">
+                <div class="flight-list-header">
+                    <div class="div-item">Kalkış Yeri</div>
+                    <div class="div-item">Varış Yeri</div>
+                    <div class="div-item">Kalkış Saat</div>
+                    <div class="div-item">Varış Saat</div>
+                    <div class="div-item detail">Price</div>
+                    <div class="div-item detail"></div>
+                </div>
+                @foreach (var item in Model.Where(x => x.IsRoundTrip))
+                {
+                    roundTripIndex++;
+                    var id = "roundTrip-" + roundTripIndex;
+                    <div class="flight-list-item">
+                        <div class="div-item">
+                            <div>@item.DestinationPoint</div>
+                        </div>
+                        <div class="div-item">
+                            <div>@item.OriginPoint</div>
+                        </div>
+                        <div class="div-item">
+                            <div>
+                                @item.DepartureDateTime.ToString("yyyy-MM-dd HH:mm")
+                            </div>
+                        </div>
+                        <div class="div-item">
+                            <div>@item.ArrivalDateTime.ToString("yyyy-MM-dd HH:mm")</div>
+                        </div>
+                        <div class="div-item">
+                            <div>@Math.Round(item.Price,2) ₺</div>
+                        </div>
+                        <div class="div-item detail" data-toggle="collapse" href="#@(id)" role="button" aria-expanded="false" aria-controls="@id">
+                            Detay
+                        </div>
+                    </div>
+                    <div class="collapse" id="@id">
+                        <div class="card">
+                            <div>Uçu Numarası: @item.FlightNumber</div>
+                            <div>Kalkış : @item.DestinationPoint</div>
+                            <div>Varış : @item.OriginPoint</div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+}
